@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-24">
       <button
-        className="w-40"
+        className="dark:text-white"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         Toggle
       </button>
 
-      <h1>{navTrad("accueil")}</h1>
+      <h1 className="text-5xl font-bold dark:text-white">{navTrad("accueil")}</h1>
       <LocaleSelect />
     </div>
   );
